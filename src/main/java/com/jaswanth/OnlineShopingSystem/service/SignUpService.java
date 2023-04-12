@@ -22,7 +22,7 @@ public class SignUpService {
 		return null;
 	}
 	
-	public SignUp getUser(String username , CharacterArrayType password) {
+	public SignUp getUser(String username , String password) {
 		return signUpRepository.getUser(username,password);
 	}
 	

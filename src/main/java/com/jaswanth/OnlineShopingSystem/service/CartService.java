@@ -28,7 +28,7 @@ public class CartService {
 		return cartRepository.getCartList(userId);
 	}
   
-  public String removeToCart(Long id){
+  public String removeFromCart(Long id){
 	  Optional<Cart> optional = cartRepository.findById(id);
 	  if(optional.isPresent()) {
 		  cartRepository.delete(optional.get());

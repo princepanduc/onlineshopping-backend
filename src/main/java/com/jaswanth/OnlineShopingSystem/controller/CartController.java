@@ -37,8 +37,8 @@ public class CartController {
 	}
 	
 	@DeleteMapping("/delete/{id}")
-	public String removeToCart(@PathVariable Long id){
-		return cartService.removeToCart(id);
+	public String removeFromCart(@PathVariable Long id){
+		return cartService.removeFromCart(id);
 	}
 	
 	

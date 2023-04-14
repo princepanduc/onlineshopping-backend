@@ -19,6 +19,7 @@ public class Product {
     private String pro_image;
     private int pro_price;
     private String pro_desc;
+	private Integer pro_disc;
    
 	public Integer getPro_id() {
 		return pro_id;
@@ -61,6 +62,12 @@ public class Product {
 	}
 	public void setPro_desc(String pro_desc) {
 		this.pro_desc = pro_desc;
+	}
+	public Integer getPro_disc() {
+		return pro_disc;
+	}
+	public void setPro_disc(Integer pro_disc) {
+		this.pro_disc = pro_disc;
 	}
     
 	

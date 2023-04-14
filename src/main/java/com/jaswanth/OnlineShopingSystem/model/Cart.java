@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.security.PrivateKey;
 
 @Entity
 public class Cart {
@@ -16,6 +17,7 @@ public class Cart {
     private long catid;
     private String pro_name;
     private String pro_cat;
+	private Integer pro_disc;
     private String pro_image;
     private int pro_price;
     private String pro_desc;
@@ -75,6 +77,12 @@ public class Cart {
 	}
 	public void setPro_desc(String pro_desc) {
 		this.pro_desc = pro_desc;
+	}
+	public Integer getPro_disc() {
+		return pro_disc;
+	}
+	public void setPro_disc(Integer pro_disc) {
+		this.pro_disc = pro_disc;
 	}
 	public int getPro_qnt() {
 		return Pro_qnt;
